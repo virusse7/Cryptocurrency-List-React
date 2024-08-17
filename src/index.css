@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 body {
+    font-family: "Prompt", sans-serif;
     color: white;
     background-color: #0f0f1a ;
 }
