@@ -1,0 +1,121 @@
+[
+    {
+        "icon": "bitcoin-icon-url",
+        "name": "Bitcoin",
+        "ticker": "BTC",
+        "amount": 59936.60,
+        "percentChange": -2.10
+    },
+    {
+        "icon": "ethereum-icon-url",
+        "name": "Ethereum",
+        "ticker": "ETH",
+        "amount": 2648.57,
+        "percentChange": 1.40
+    },
+    {
+        "icon": "tether-icon-url",
+        "name": "Tether",
+        "ticker": "USDT",
+        "amount": 1.00,
+        "percentChange": 0.10
+    },
+    {
+        "icon": "bnb-icon-url",
+        "name": "BNB",
+        "ticker": "BNB",
+        "amount": 538.15,
+        "percentChange": 1.60
+    },
+    {
+        "icon": "solana-icon-url",
+        "name": "Solana",
+        "ticker": "SOL",
+        "amount": 144.24,
+        "percentChange": 7.10
+    },
+    {
+        "icon": "usdc-icon-url",
+        "name": "USDC",
+        "ticker": "USDC",
+        "amount": 1.00,
+        "percentChange": 0.00
+    },
+    {
+        "icon": "xrp-icon-url",
+        "name": "XRP",
+        "ticker": "XRP",
+        "amount": 0.5679,
+        "percentChange": 2.30
+    },
+    {
+        "icon": "steth-icon-url",
+        "name": "Lido Staked Ether",
+        "ticker": "STETH",
+        "amount": 2647.61,
+        "percentChange": 1.40
+    },
+    {
+        "icon": "toncoin-icon-url",
+        "name": "Toncoin",
+        "ticker": "TON",
+        "amount": 6.57,
+        "percentChange": 0.10
+    },
+    {
+        "icon": "dogecoin-icon-url",
+        "name": "Dogecoin",
+        "ticker": "DOGE",
+        "amount": 0.1029,
+        "percentChange": 4.90
+    },
+    {
+        "icon": "cardano-icon-url",
+        "name": "Cardano",
+        "ticker": "ADA",
+        "amount": 0.3371,
+        "percentChange": 4.50
+    },
+    {
+        "icon": "tron-icon-url",
+        "name": "TRON",
+        "ticker": "TRX",
+        "amount": 0.1335,
+        "percentChange": 3.80
+    },
+    {
+        "icon": "wrapped-steth-icon-url",
+        "name": "Wrapped stETH",
+        "ticker": "WSTETH",
+        "amount": 3116.11,
+        "percentChange": 1.20
+    },
+    {
+        "icon": "wrapped-bitcoin-icon-url",
+        "name": "Wrapped Bitcoin",
+        "ticker": "WBTC",
+        "amount": 59872.71,
+        "percentChange": 1.90
+    },
+    {
+        "icon": "avalanche-icon-url",
+        "name": "Avalanche",
+        "ticker": "AVAX",
+        "amount": 20.98,
+        "percentChange": 4.90
+    },
+    {
+        "icon": "shiba-inu-icon-url",
+        "name": "Shiba Inu",
+        "ticker": "SHIB",
+        "amount": 0.00001344,
+        "percentChange": 5.60
+    },
+    {
+        "icon": "weth-icon-url",
+        "name": "WETH",
+        "ticker": "WETH",
+        "amount": 2649.49,
+        "percentChange": 1.40
+    }
+]
