@@ -12,6 +12,7 @@ function App() {
         <Header />
         <div className="p-3">
           <SearchInput />
+          <ul className="">
           {data.map((crypto, index) => (
             <CryptocurrencyTile
               key={index}
@@ -22,6 +23,7 @@ function App() {
               ticker={crypto.ticker}
             />
           ))}
+          </ul>
         </div>
       </main>
     </AppWrapper>
