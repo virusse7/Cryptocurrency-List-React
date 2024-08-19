@@ -2,6 +2,7 @@ import Header from "./components/Header"
 import SearchInput from "./components/SearchInput"
 import AppWrapper from "./components/AppWrapper"
 import CryptocurrencyTile from "./components/CryptocurrencyTile"
+import data from './data.json';
 
 function App() {
 
@@ -11,7 +12,16 @@ function App() {
         <Header />
         <div className="p-3">
           <SearchInput />
-          <CryptocurrencyTile percentage={2} />
+          {data.map((crypto, index) => (
+            <CryptocurrencyTile
+              key={index}
+              amount={crypto.amount}
+              icon={crypto.icon}
+              name={crypto.name}
+              percentChange={crypto.percentChange}
+              ticker={crypto.ticker}
+            />
+          ))}
         </div>
       </main>
     </AppWrapper>
