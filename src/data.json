@@ -1,121 +1,72 @@
 [
     {
-        "icon": "bitcoin-icon-url",
+        "icon": "https://coin-images.coingecko.com/coins/images/1/large/bitcoin.png?1696501400",
         "name": "Bitcoin",
         "ticker": "BTC",
-        "amount": 59936.60,
-        "percentChange": -2.10
+        "amount": 59025,
+        "percentChange": -0.9817
     },
     {
-        "icon": "ethereum-icon-url",
+        "icon": "https://coin-images.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
         "name": "Ethereum",
         "ticker": "ETH",
-        "amount": 2648.57,
-        "percentChange": 1.40
+        "amount": 2608.14,
+        "percentChange": -2.01173
     },
     {
-        "icon": "tether-icon-url",
+        "icon": "https://coin-images.coingecko.com/coins/images/325/large/Tether.png?1696501661",
         "name": "Tether",
         "ticker": "USDT",
-        "amount": 1.00,
-        "percentChange": 0.10
+        "amount": 0.999939,
+        "percentChange": -0.03463
     },
     {
-        "icon": "bnb-icon-url",
+        "icon": "https://coin-images.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1696501970",
         "name": "BNB",
         "ticker": "BNB",
-        "amount": 538.15,
-        "percentChange": 1.60
+        "amount": 550.6,
+        "percentChange": 2.45382
     },
     {
-        "icon": "solana-icon-url",
+        "icon": "https://coin-images.coingecko.com/coins/images/4128/large/solana.png?1718769756",
         "name": "Solana",
         "ticker": "SOL",
-        "amount": 144.24,
-        "percentChange": 7.10
+        "amount": 143.62,
+        "percentChange": -1.42843
     },
     {
-        "icon": "usdc-icon-url",
+        "icon": "https://coin-images.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
         "name": "USDC",
         "ticker": "USDC",
-        "amount": 1.00,
-        "percentChange": 0.00
+        "amount": 0.999839,
+        "percentChange": -0.02199
     },
     {
-        "icon": "xrp-icon-url",
+        "icon": "https://coin-images.coingecko.com/coins/images/44/large/xrp-symbol-white-128.png?1696501442",
         "name": "XRP",
         "ticker": "XRP",
-        "amount": 0.5679,
-        "percentChange": 2.30
+        "amount": 0.603741,
+        "percentChange": 5.60264
     },
     {
-        "icon": "steth-icon-url",
+        "icon": "https://coin-images.coingecko.com/coins/images/13442/large/steth_logo.png?1696513206",
         "name": "Lido Staked Ether",
         "ticker": "STETH",
-        "amount": 2647.61,
-        "percentChange": 1.40
+        "amount": 2607.96,
+        "percentChange": -1.9733
     },
     {
-        "icon": "toncoin-icon-url",
+        "icon": "https://coin-images.coingecko.com/coins/images/17980/large/ton_symbol.png?1696517498",
         "name": "Toncoin",
         "ticker": "TON",
-        "amount": 6.57,
-        "percentChange": 0.10
+        "amount": 6.8,
+        "percentChange": 1.53923
     },
     {
-        "icon": "dogecoin-icon-url",
+        "icon": "https://coin-images.coingecko.com/coins/images/5/large/dogecoin.png?1696501409",
         "name": "Dogecoin",
         "ticker": "DOGE",
-        "amount": 0.1029,
-        "percentChange": 4.90
-    },
-    {
-        "icon": "cardano-icon-url",
-        "name": "Cardano",
-        "ticker": "ADA",
-        "amount": 0.3371,
-        "percentChange": 4.50
-    },
-    {
-        "icon": "tron-icon-url",
-        "name": "TRON",
-        "ticker": "TRX",
-        "amount": 0.1335,
-        "percentChange": 3.80
-    },
-    {
-        "icon": "wrapped-steth-icon-url",
-        "name": "Wrapped stETH",
-        "ticker": "WSTETH",
-        "amount": 3116.11,
-        "percentChange": 1.20
-    },
-    {
-        "icon": "wrapped-bitcoin-icon-url",
-        "name": "Wrapped Bitcoin",
-        "ticker": "WBTC",
-        "amount": 59872.71,
-        "percentChange": 1.90
-    },
-    {
-        "icon": "avalanche-icon-url",
-        "name": "Avalanche",
-        "ticker": "AVAX",
-        "amount": 20.98,
-        "percentChange": 4.90
-    },
-    {
-        "icon": "shiba-inu-icon-url",
-        "name": "Shiba Inu",
-        "ticker": "SHIB",
-        "amount": 0.00001344,
-        "percentChange": 5.60
-    },
-    {
-        "icon": "weth-icon-url",
-        "name": "WETH",
-        "ticker": "WETH",
-        "amount": 2649.49,
-        "percentChange": 1.40
+        "amount": 0.10084,
+        "percentChange": -1.52559
     }
 ]
