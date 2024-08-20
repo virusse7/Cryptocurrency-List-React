@@ -1,11 +1,29 @@
+import { useState } from "react";
 
-const SearchInput = () => {
+interface SearchInputProps {
+    onSearch: (searchTerm: string) => void;
+}
+
+const SearchInput: React.FC<SearchInputProps> = ({ onSearch }) => {
+    const [searchTerm, setSearchTerm] = useState('');
+
+    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const term = event.target.value;
+        setSearchTerm(term);
+        onSearch(term);
+    }
 
     return (
         <section className='py-2'>
             <div className="relative">
                 <input
-                    className='w-full px-[8px] py-[9px] rounded-[6px] border-[#2B344D] border-[1px] bg-[#040407] text-[#7685A0]' placeholder='Search'
+                    className='
+                    w-full px-[8px] py-[9px] rounded-[6px] border-[#2B344D] border-[1px]
+                    bg-[#040407] text-[#7685A0]'
+                    placeholder='Search'
+                    type="text"
+                    value={searchTerm}
+                    onChange={handleChange}
                 />
                 <div className="">
                     <button className='absolute right-[10px] top-[12px]'>
