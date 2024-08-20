@@ -22,9 +22,11 @@ function generateRandomPercentage() {
 }
 
 const generateData = (baseData: Cryptocurrency[], count: number) => {
+    const maxRecords = 10_000;
+    const validCount = Math.min(count, maxRecords);
 
     const result: Cryptocurrency[] = [];
-    for (let i = 0; i < count; i++) {
+    for (let i = 0; i < validCount; i++) {
         const randomCryptocurrency = baseData[i % baseData.length];
         result.push({
             icon: randomCryptocurrency.icon,
