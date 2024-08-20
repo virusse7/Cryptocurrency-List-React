@@ -1,33 +1,19 @@
-import Header from "./components/Header"
-import SearchInput from "./components/SearchInput"
-import AppWrapper from "./components/AppWrapper"
-import CryptocurrencyTile from "./components/CryptocurrencyTile"
-import data from './data.json';
+import Header from "./components/Header";
 
+import AppWrapper from "./components/AppWrapper";
+import CryptocurrencyList from "./components/CryptocurrencyList";
 function App() {
 
   return (
     <AppWrapper>
-      <main className="">
+      <main className="flex flex-col">
         <Header />
         <div className="p-3">
-          <SearchInput />
-          <ul className="">
-          {data.map((crypto, index) => (
-            <CryptocurrencyTile
-              key={index}
-              amount={crypto.amount}
-              icon={crypto.icon}
-              name={crypto.name}
-              percentChange={crypto.percentChange}
-              ticker={crypto.ticker}
-            />
-          ))}
-          </ul>
+          <CryptocurrencyList />
         </div>
       </main>
     </AppWrapper>
-  )
+  );
 }
 
-export default App
+export default App;
