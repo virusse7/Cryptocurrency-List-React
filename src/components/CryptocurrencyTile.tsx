@@ -1,19 +1,23 @@
 import binanceImage from '../assets/binance.png';
 import nearImage from '../assets/near.png'
 
+interface CryptocurrencyTileProps {
+    icon: string;
+    name: string;
+    ticker: string;
+    amount: number;
+    percentChange: number;
+}
 
-const CryptocurrencyTile = ({
-    icon, name, ticker, amount, percentChange
-}: {
-    icon: string, name: string, ticker: string, amount: number, percentChange: number
-}) => {
+const CryptocurrencyTile: React.FC<CryptocurrencyTileProps> = ({ icon, name, ticker, amount, percentChange }) => {
+
     const colorBoxClass = percentChange >= 0 ? 'text-[#70D1A3] bg-[#5AB88B]/25' : 'text-[#F08282] bg-[#D25858]/25';
     const formattedPercentage = percentChange > 0 ? `+${percentChange.toFixed(2)}` : `${percentChange.toFixed(2)}`;
-    const numIcons = Math.floor(Math.random() * 10) + 1;
+    const numIcons = Math.floor(Math.random() * 5) + 4;
     const iconsToShow = numIcons > 3 ? 3 : numIcons;
     const extraIconsCount = numIcons - iconsToShow;
 
-    const smallIcons = [nearImage, binanceImage,nearImage, binanceImage,nearImage, binanceImage,nearImage, binanceImage]
+    const smallIcons = [nearImage, binanceImage, nearImage, binanceImage, nearImage, binanceImage, nearImage, binanceImage]
 
     return (
         <li className=''>
@@ -21,13 +25,13 @@ const CryptocurrencyTile = ({
                 <div className="flex justify-between">
                     <div className="flex flex-row gap-2 justify-center items-center">
                         <div className="relative">
-                            <img className="w-[48px] h-[48px]" src={nearImage} alt="" />
+                            <img className="w-[48px] h-[48px] rounded-full" src={icon} alt="" />
                             <div className="absolute bottom-0.5 left-4 -space-x-1.5 flex ">
-                                {Array.from({length: iconsToShow}).map((_, index) => {
+                                {Array.from({ length: iconsToShow }).map((_, index) => {
                                     const randomIcon = smallIcons[Math.floor(Math.random() * smallIcons.length)];
                                     return (
                                         <img key={index} className='w-[12px] h-[12px]' src={randomIcon} alt='small icon' />
-                                    ) 
+                                    )
                                 })}
                                 {extraIconsCount > 0 && (
                                     <div className="w-[12px] h-[12px] bg-gray-500 text-[6px] font-bold rounded-full flex items-center justify-center">
