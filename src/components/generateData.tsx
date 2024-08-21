@@ -5,7 +5,7 @@ interface Cryptocurrency {
     "ticker": string;
     "amount": number;
     "percentChange": number;
-    "smallIcons" : string[];
+    "smallIcons": string[];
 }
 
 function generateRandomAmount() {
@@ -27,7 +27,7 @@ function getRandomSmallIcons(baseData: Cryptocurrency[], count: number): string[
     const smallIcons: string[] = [];
     const totalIcons = Math.min(count, baseData.length)
 
-    for (let i = 0; i < totalIcons ;i++) {
+    for (let i = 0; i < totalIcons; i++) {
         const randomIndex = Math.floor(Math.random() * baseData.length);
         smallIcons.push(baseData[randomIndex].icon)
     }
@@ -38,7 +38,7 @@ function getRandomSmallIcons(baseData: Cryptocurrency[], count: number): string[
 const generateData = (baseData: Cryptocurrency[], count: number) => {
     const maxRecords = 10_000;
     const validCount = Math.min(count, maxRecords);
-    
+
     const result: Cryptocurrency[] = [];
     for (let i = 0; i < validCount; i++) {
         const randomCryptocurrency = baseData[i % baseData.length];
