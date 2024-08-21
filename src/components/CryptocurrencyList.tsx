@@ -10,6 +10,7 @@ interface Cryptocurrency {
     "ticker": string;
     "amount": number;
     "percentChange": number;
+    smallIcons: string[];
 }
 
 const CryptocurrencyList = () => {
@@ -44,6 +45,7 @@ const CryptocurrencyList = () => {
                         name={crypto.name}
                         percentChange={crypto.percentChange}
                         ticker={crypto.ticker}
+                        smallIcons={crypto.smallIcons}
                     />
                 ))}
             </ul>
