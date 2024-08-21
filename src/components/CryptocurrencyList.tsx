@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import baseData from '../data.json';
 import CryptocurrencyTile from './CryptocurrencyTile';
 import generateData from './generateData';
@@ -18,21 +18,21 @@ interface CryptocurrencyListProps {
 }
 
 const CryptocurrencyList: React.FC<CryptocurrencyListProps> = ({recordCount}) => {
-    const [generatedData, setGeneratedData] = useState<Cryptocurrency[]>([]);
-    const [filteredData, setFilteredData] = useState<Cryptocurrency[]>([]);
+    const [searchTerm, setSearchTerm] = useState<string>('');
 
-    useEffect(() => {
-        const data = generateData(baseData, recordCount);
-        setGeneratedData(data);
-        setFilteredData(data);
+    const generatedData = useMemo(() => {
+        return generateData(baseData, recordCount)
     }, [recordCount])
 
-    const handleSearch = (searchTerm: string) => {
-        const filtered = generatedData.filter((crypto) =>
-            crypto.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            crypto.ticker.toLowerCase().includes(searchTerm.toLowerCase())
-        )
-        setFilteredData(filtered);
+    const filteredData = useMemo(() => {
+        return generatedData.filter((crypto) => 
+        crypto.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        crypto.ticker.toLowerCase().includes(searchTerm.toLowerCase())
+        ) 
+    }, [searchTerm,generatedData])
+
+    const handleSearch = (searchedText: string) => {
+        setSearchTerm(searchedText)
     }
 
     return (
