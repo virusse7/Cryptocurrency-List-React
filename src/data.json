@@ -4,69 +4,79 @@
         "name": "Bitcoin",
         "ticker": "BTC",
         "amount": 59025,
-        "percentChange": -0.9817
+        "percentChange": -0.9817,
+        "smallIcons": []
     },
     {
         "icon": "https://coin-images.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
         "name": "Ethereum",
         "ticker": "ETH",
         "amount": 2608.14,
-        "percentChange": -2.01173
+        "percentChange": -2.01173,
+        "smallIcons": []
     },
     {
         "icon": "https://coin-images.coingecko.com/coins/images/325/large/Tether.png?1696501661",
         "name": "Tether",
         "ticker": "USDT",
         "amount": 0.999939,
-        "percentChange": -0.03463
+        "percentChange": -0.03463,
+        "smallIcons": []
     },
     {
         "icon": "https://coin-images.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1696501970",
         "name": "BNB",
         "ticker": "BNB",
         "amount": 550.6,
-        "percentChange": 2.45382
+        "percentChange": 2.45382,
+        "smallIcons": []
     },
     {
         "icon": "https://coin-images.coingecko.com/coins/images/4128/large/solana.png?1718769756",
         "name": "Solana",
         "ticker": "SOL",
         "amount": 143.62,
-        "percentChange": -1.42843
+        "percentChange": -1.42843,
+        "smallIcons": []
     },
     {
         "icon": "https://coin-images.coingecko.com/coins/images/6319/large/usdc.png?1696506694",
         "name": "USDC",
         "ticker": "USDC",
         "amount": 0.999839,
-        "percentChange": -0.02199
+        "percentChange": -0.02199,
+        "smallIcons": []
     },
     {
         "icon": "https://coin-images.coingecko.com/coins/images/44/large/xrp-symbol-white-128.png?1696501442",
         "name": "XRP",
         "ticker": "XRP",
         "amount": 0.603741,
-        "percentChange": 5.60264
+        "percentChange": 5.60264,
+        "smallIcons": []
     },
     {
         "icon": "https://coin-images.coingecko.com/coins/images/13442/large/steth_logo.png?1696513206",
         "name": "Lido Staked Ether",
         "ticker": "STETH",
         "amount": 2607.96,
-        "percentChange": -1.9733
+        "percentChange": -1.9733,
+        "smallIcons": []
     },
     {
         "icon": "https://coin-images.coingecko.com/coins/images/17980/large/ton_symbol.png?1696517498",
         "name": "Toncoin",
         "ticker": "TON",
         "amount": 6.8,
-        "percentChange": 1.53923
+        "percentChange": 1.53923,
+        "smallIcons": []
     },
     {
         "icon": "https://coin-images.coingecko.com/coins/images/5/large/dogecoin.png?1696501409",
         "name": "Dogecoin",
         "ticker": "DOGE",
         "amount": 0.10084,
-        "percentChange": -1.52559
+        "percentChange": -1.52559,
+        "smallIcons": []
     }
 ]
