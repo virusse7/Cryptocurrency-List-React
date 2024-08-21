@@ -4,7 +4,7 @@ import CryptocurrencyList from "./components/CryptocurrencyList";
 import { useState } from "react";
 
 function App() {
-  const [recordCount, setRecordCount] = useState(500);
+  const [recordCount, setRecordCount] = useState(1000);
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = Number(event.target.value);

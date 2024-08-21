@@ -1,4 +1,3 @@
-
 const Header = () => {
   return (
     <section className='p-3 border-[#2B344D] border-b-[1px]'>

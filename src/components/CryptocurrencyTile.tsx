@@ -1,4 +1,3 @@
-
 interface CryptocurrencyTileProps {
     icon: string;
     name: string;

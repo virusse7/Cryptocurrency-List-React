@@ -1,4 +1,3 @@
-
 interface Cryptocurrency {
     "icon": string;
     "name": string;
@@ -40,6 +39,7 @@ const generateData = (baseData: Cryptocurrency[], count: number) => {
     const validCount = Math.min(count, maxRecords);
 
     const result: Cryptocurrency[] = [];
+
     for (let i = 0; i < validCount; i++) {
         const randomCryptocurrency = baseData[i % baseData.length];
         const smallIconsCount = Math.floor((Math.random() * 10) + 1)
