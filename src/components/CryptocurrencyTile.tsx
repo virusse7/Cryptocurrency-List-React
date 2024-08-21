@@ -21,7 +21,8 @@ const CryptocurrencyTile: React.FC<CryptocurrencyTileProps> = ({ icon, name, tic
 
     return (
         <li className=''>
-            <div className="bg-[#171C2F] px-[12px] py-[8px] rounded-[12px] mb-[4px]">
+            {/* improve hover effect */}
+            <div className="bg-[#171C2F] hover:bg-[#171C2F]/55 px-[12px] py-[8px] rounded-[12px] mb-[4px] transition duration-300">
                 <div className="flex justify-between">
                     <div className="flex flex-row gap-2 justify-center items-center">
                         <div className="relative">
