@@ -1,10 +1,10 @@
 import Header from "./components/Header";
-
 import AppWrapper from "./components/AppWrapper";
 import CryptocurrencyList from "./components/CryptocurrencyList";
 import { useState } from "react";
+
 function App() {
-  const [recordCount, setRecordCount] = useState(20);
+  const [recordCount, setRecordCount] = useState(500);
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>)  => {
     const value = Number(event.target.value);
@@ -35,7 +35,3 @@ function App() {
 }
 
 export default App;
-
-{/* todo
-generate 10k records with smooth rendering
-*/}
