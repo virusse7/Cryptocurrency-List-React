@@ -42,7 +42,7 @@ const generateData = (baseData: Cryptocurrency[], count: number) => {
     const result: Cryptocurrency[] = [];
     for (let i = 0; i < validCount; i++) {
         const randomCryptocurrency = baseData[i % baseData.length];
-        const smallIconsCount = Math.floor((Math.random() * 7) + 4)
+        const smallIconsCount = Math.floor((Math.random() * 10) + 1)
         const smallIcons = getRandomSmallIcons(baseData, smallIconsCount)
         result.push({
             icon: randomCryptocurrency.icon,
