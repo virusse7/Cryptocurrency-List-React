@@ -1,17 +1,8 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import baseData from '../data.json';
 import CryptocurrencyTile from './CryptocurrencyTile';
 import generateData from './generateData';
 import SearchInput from './SearchInput';
-
-interface Cryptocurrency {
-    "icon": string;
-    "name": string;
-    "ticker": string;
-    "amount": number;
-    "percentChange": number;
-    smallIcons: string[];
-}
 
 interface CryptocurrencyListProps {
     recordCount: number;
