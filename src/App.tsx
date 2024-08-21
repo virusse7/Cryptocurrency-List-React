@@ -7,8 +7,8 @@ function App() {
   const [recordCount, setRecordCount] = useState(20);
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>)  => {
-    const value = event.target.value;
-    if (!isNaN(Number(value)) && Number(value) > 0) {
+    const value = Number(event.target.value);
+    if (value >= 1 && value <= 10000) {
       setRecordCount(Number(value));
     }
   }
@@ -28,7 +28,6 @@ function App() {
       onChange={handleInputChange}
       value={recordCount}
       min="1"
-      max="10_000"
       className="mx-auto mt-4 items-center flex px-2 py-1 bg-[#171C2F] text-white rounded"
     />
     </>
@@ -38,8 +37,5 @@ function App() {
 export default App;
 
 {/* todo
-listitem hover effect 
-small icons generating
 generate 10k records with smooth rendering
-add input to change numbers of generated records
 */}
