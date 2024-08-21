@@ -5,15 +5,15 @@ interface CryptocurrencyTileProps {
     ticker: string;
     amount: number;
     percentChange: number;
-    smallIcons : string[];
+    smallIcons: string[];
 }
 
 const CryptocurrencyTile: React.FC<CryptocurrencyTileProps> = ({ icon, name, ticker, amount, percentChange, smallIcons }) => {
 
     const colorBoxClass = percentChange >= 0 ? 'text-[#70D1A3] bg-[#5AB88B]/25' : 'text-[#F08282] bg-[#D25858]/25';
     const formattedPercentage = percentChange > 0 ? `+${percentChange.toFixed(2)}` : `${percentChange.toFixed(2)}`;
-    
-    const iconsToShow = smallIcons.slice(0,3);
+
+    const iconsToShow = smallIcons.slice(0, 3);
     const extraIconsCount = smallIcons.length > 3 ? smallIcons.length - 3 : 0;
 
     return (
@@ -25,8 +25,8 @@ const CryptocurrencyTile: React.FC<CryptocurrencyTileProps> = ({ icon, name, tic
                             <img className="w-[48px] h-[48px] rounded-full" src={icon} alt="" />
                             <div className="absolute bottom-0.5 left-4 -space-x-1.5 flex ">
                                 {iconsToShow.map((icon, index) => (
-                                        <img key={index} className='w-[12px] h-[12px] rounded-full' src={icon} alt="small icon" />
-                                    )
+                                    <img key={index} className='w-[12px] h-[12px] rounded-full' src={icon} alt="small icon" />
+                                )
                                 )}
                                 {extraIconsCount > 0 && (
                                     <div className="w-[12px] h-[12px] bg-gray-500 text-[6px] font-bold rounded-full flex items-center justify-center">

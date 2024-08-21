@@ -8,7 +8,7 @@ interface CryptocurrencyListProps {
     recordCount: number;
 }
 
-const CryptocurrencyList: React.FC<CryptocurrencyListProps> = ({recordCount}) => {
+const CryptocurrencyList: React.FC<CryptocurrencyListProps> = ({ recordCount }) => {
     const [searchTerm, setSearchTerm] = useState<string>('');
 
     const generatedData = useMemo(() => {
@@ -16,11 +16,11 @@ const CryptocurrencyList: React.FC<CryptocurrencyListProps> = ({recordCount}) =>
     }, [recordCount])
 
     const filteredData = useMemo(() => {
-        return generatedData.filter((crypto) => 
-        crypto.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        crypto.ticker.toLowerCase().includes(searchTerm.toLowerCase())
-        ) 
-    }, [searchTerm,generatedData])
+        return generatedData.filter((crypto) =>
+            crypto.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+            crypto.ticker.toLowerCase().includes(searchTerm.toLowerCase())
+        )
+    }, [searchTerm, generatedData])
 
     const handleSearch = (searchedText: string) => {
         setSearchTerm(searchedText)
