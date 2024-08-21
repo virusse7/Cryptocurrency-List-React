@@ -13,15 +13,19 @@ interface Cryptocurrency {
     smallIcons: string[];
 }
 
-const CryptocurrencyList = () => {
+interface CryptocurrencyListProps {
+    recordCount: number;
+}
+
+const CryptocurrencyList: React.FC<CryptocurrencyListProps> = ({recordCount}) => {
     const [generatedData, setGeneratedData] = useState<Cryptocurrency[]>([]);
     const [filteredData, setFilteredData] = useState<Cryptocurrency[]>([]);
 
     useEffect(() => {
-        const data = generateData(baseData, 100); // Change number to genereate objects from range 0-10_000
+        const data = generateData(baseData, recordCount);
         setGeneratedData(data);
         setFilteredData(data);
-    }, [])
+    }, [recordCount])
 
     const handleSearch = (searchTerm: string) => {
         const filtered = generatedData.filter((crypto) =>
