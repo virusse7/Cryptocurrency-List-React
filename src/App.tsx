@@ -14,23 +14,24 @@ function App() {
     }
 
     return (
-        <>
-            <AppWrapper>
-                <main className="flex flex-col">
-                    <Header />
-                    <div className="p-3">
-                        <CryptocurrencyList recordCount={recordCount} />
-                    </div>
-                </main>
-            </AppWrapper>
-            <input
-                type="number"
-                onChange={handleInputChange}
-                value={recordCount}
-                min="1"
-                className="mx-auto mt-4 items-center flex px-2 py-1 bg-[#171C2F] text-white rounded"
-            />
-        </>
+        <AppWrapper>
+            <main className="flex flex-col">
+                <Header />
+                <div className="p-3">
+                    <CryptocurrencyList recordCount={recordCount} />
+                </div>
+            </main>
+            <div className="text-center">
+                <p className="pb-2">Set number of records:</p>
+                <input
+                    className="mb-4 px-2 py-1 bg-[#171C2F] rounded-lg"
+                    type="number"
+                    onChange={handleInputChange}
+                    value={recordCount}
+                    min="1"
+                />
+            </div>
+        </AppWrapper>
     );
 }
 
